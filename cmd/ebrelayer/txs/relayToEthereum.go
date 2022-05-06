@@ -150,7 +150,8 @@ func RelayBatchProphecyCompletedToEthereum(
 	)
 
 	// sleep 2 seconds to wait for tx to go through before querying.
-	sleepThread(2)
+	// TODO: We should be able to remove this, there's retry to get the tx receipt
+	// sleepThread(2)
 
 	if err != nil {
 		sugaredLogger.Errorw(
