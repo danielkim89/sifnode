@@ -2,6 +2,8 @@ module github.com/Sifchain/sifnode
 
 go 1.17
 
+require github.com/patrickmn/go-cache v2.1.0+incompatible
+
 require (
 	github.com/BurntSushi/toml v0.4.1
 	github.com/MakeNowJust/heredoc v1.0.0
